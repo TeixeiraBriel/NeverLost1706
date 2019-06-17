@@ -26,7 +26,7 @@ function caminho(){
             document.querySelector("#img").src = final;
         }
         else {
-            if (pa == 326, dest == 311){
+            if (pa == 326, dest == 301){
                 var final = "img/326311.jpeg";
                 document.querySelector("#atual").value = ""; 
                 document.querySelector("#destino").value = "";
