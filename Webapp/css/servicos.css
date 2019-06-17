@@ -1,0 +1,16 @@
+main{
+    text-align: center;
+}
+
+.text1{    
+    color: black;
+}
+.text1:hover{
+    color: springgreen;
+    cursor: pointer;
+    
+}
+
+#logo {
+    padding: 0;
+}

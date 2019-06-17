@@ -1,0 +1,32 @@
+main{
+    text-align: center;
+}
+
+.text1{    
+    color: black;
+}
+.text1:hover{
+    color: springgreen;
+    cursor: pointer;
+    
+}
+
+#logo {
+    position: absolute;
+     opacity: 0.1;
+}
+h1,p{
+    padding: 1em;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    #logo {
+        position: absolute;
+        opacity: 0.1;
+        left: 45%;
+    }
+    main {
+        height: 585px;
+    }
+}

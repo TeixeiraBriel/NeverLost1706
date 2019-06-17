@@ -1,0 +1,261 @@
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/NovoHorario.css">
+    <title>Horario</title>
+</head>
+
+
+<body>
+
+    <header>
+        <span class="cabecalho-titulo">Horario</span>
+    </header>
+    
+    <nav>
+      <div class="menu-basico-nav">
+        <ul>
+          <li class="menu-basico-cabecalho menu-item-acionador" onclick="ExibeOcultaFilhos('menuNav')">Menu</li>
+          <ul class="menu-item-escondido" id="menuNav">
+            <ul class="menu-lista">
+              <li class="menu-item"><a href="index.html"class="menu-link">Pagina Inicial</a></li>
+              <li class="menu-item-selecionado"><a href="horario.html"class="menu-link">Horario</a></li>
+              <li class="menu-item-acionador" onclick="ExibeOcultaFilhos('menuUsuarioNav')"><span class="menu-link">Mapas</span>
+              <ul class="menu-item-escondido" id="menuUsuarioNav">
+                <li class="menu-item"><a href="mapauna.html"class="menu-link">Una</a></li>                   
+                <li class="menu-item"><a href="#"class="menu-link">Outros</a></li>
+              </ul>  
+              <li class="menu-item"><a href="clientes.html"class="menu-link">Clientes</a></li>
+              <li class="menu-item"><a href="servicos.html"class="menu-link">Serviços</a></li>
+              <li class="menu-item"><a href="sobre.html"class="menu-link">Sobre</a></li>
+              <li class="menu-item"><a href="contato.html"class="menu-link">Contato</a></li>        
+            </ul>
+          </ul>
+        </ul>
+      </div> 
+    </nav>
+
+    <div class="container">
+        <aside>
+            <div class="menu-basico">
+                <a class="menu-basico-cabecalho" href="index.html">NeverLost</a>
+                <ul class="menu-lista">
+                    <li class="menu-item-selecionado"><a href="horario.html"class="menu-link">Horario</a></li>
+                    <li class="menu-item-acionador" onclick="ExibeOcultaFilhos('menuUsuario')"><span class="menu-link">Mapas</span>
+                        <ul class="menu-item-escondido" id="menuUsuario">
+                            <li class="menu-item"><a href="mapauna.html"class="menu-link">Una</a></li>                   
+                            <li class="menu-item"><a href="#"class="menu-link">Outros</a></li>
+                        </ul>  
+                    </li> 
+                    <li class="menu-item"><a href="clientes.html"class="menu-link">Clientes</a></li>
+                    <li class="menu-item"><a href="servicos.html"class="menu-link">Serviços</a></li>
+                    <li class="menu-item"><a href="sobre.html"class="menu-link">Sobre</a></li>
+                    <li class="menu-item"><a href="contato.html"class="menu-link">Contato</a></li>        
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <table id="TabelaGrande">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Segunda-Feira</td>
+                    <td class="Cabecalho">Terça-Feira</td>
+                    <td class="Cabecalho">Quarta-Feira</td>
+                    <td class="Cabecalho">Quinta-Feira</td>
+                    <td class="Cabecalho">Sexta-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td>18:55 - 19:45</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                    <td>Empreendedorismo<span class="sala"> - Sala 313</span></td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos Computacionais<span class="sala"> - Sala 313</span></td>
+                    <td>Sistemas Operacionais<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td>19:45 - 20:35</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                    <td>Empreendedorismo <span class="sala"> - Sala 313</span></td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos Computacionais<span class="sala"> - Sala 313</span></td>
+                    <td>Sistemas Operacionais<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td>20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td>20:55 - 21:45</td>
+                    <td>----</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Sala 313</span></td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td>21:45 - 22:35</td>
+                    <td>----</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Sala 313</span></td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+            </table> 
+
+            <table id="TabelaSegunda" class="TabelaMenor">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Segunda-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td class="LinhaA">18:55 - 19:45</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">19:45 - 20:35</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:55 - 21:45</td>
+                    <td>----</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">21:45 - 22:35</td>
+                    <td>----</td>
+                </tr>
+            </table> 
+
+            <table id="TabelaTerça" class="TabelaMenor">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Terça-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td class="LinhaA">18:55 - 19:45</td>
+                    <td>Empreendedorismo<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">19:45 - 20:35</td>
+                    <td>Empreendedorismo <span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:55 - 21:45</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">21:45 - 22:35</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                </tr>
+            </table> 
+
+            <table id="TabelaQuarta" class="TabelaMenor">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Quarta-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td class="LinhaA">18:55 - 19:45</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">19:45 - 20:35</td>
+                    <td>Laboratorio de Aprendizagem Integrada 1A<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:55 - 21:45</td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">21:45 - 22:35</td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Sala 313</span></td>
+                </tr>
+            </table> 
+
+            <table id="TabelaQuinta" class="TabelaMenor">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Quinta-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td class="LinhaA">18:55 - 19:45</td>
+                    <td>Fundamentos Computacionais<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">19:45 - 20:35</td>
+                    <td>Fundamentos Computacionais<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:55 - 21:45</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">21:45 - 22:35</td>
+                    <td>Comunicação: Leitura, Escrita e Oratória<span class="sala"> - Sala 313</span></td>
+                </tr>
+            </table> 
+
+            <table id="TabelaSexta" class="TabelaMenor">
+                <tr id="minhatabela">
+                    <td class="Cabecalho">Horario</td>
+                    <td class="Cabecalho">Sexta-Feira</td>
+                </tr>
+                <tr class="linha">
+                    <td class="LinhaA">18:55 - 19:45</td>
+                    <td>Sistemas Operacionais<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">19:45 - 20:35</td>
+                    <td>Sistemas Operacionais<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:35 - 20:55</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">20:55 - 21:45</td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+                <tr  class="linha">
+                    <td class="LinhaA">21:45 - 22:35</td>
+                    <td>Fundamentos de Desenvolvimento WEB<span class="sala"> - Laboratorio 323</span></td>
+                </tr>
+            </table> 
+             
+        </main>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+<script src="js/mapas.js"></script>
